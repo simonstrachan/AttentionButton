@@ -50,7 +50,7 @@ void setup() {
   // Create the BLE Service
   BLEService *bmeService = pServer->createService(SERVICE_UUID);
   bmeService->addCharacteristic(&buttonCharacteristic);
-  buttonDescriptor.setValue("OFF");
+  buttonDescriptor.setValue("Button Value");
   buttonCharacteristic.addDescriptor(&buttonDescriptor);
 
   // Start the service
@@ -65,13 +65,11 @@ void setup() {
 
 void loop() {
   if (deviceConnected) {
-    if (digitalRead(switchPin) == 1)  {
+    if (digitalRead(switchPin))  {
       buttonCharacteristic.setValue("ON");
       buttonCharacteristic.notify();
       Serial.println("ON");
     } else {
-      buttonCharacteristic.setValue("OFF");
-      buttonCharacteristic.notify();
       Serial.println("OFF");
     }
   }

@@ -119,12 +119,9 @@ void loop() {
   //if new button readings are available, turn on light
   if (newButton){
     newButton = false;
-    if(buttonChar == "ON"){
-      digitalWrite(ledPin, HIGH);
-    }
-    if(buttonChar == "OFF"){
-      digitalWrite(ledPin, LOW);
-    }
+    Serial.println(buttonChar);
+    digitalWrite(ledPin, HIGH);  
   }
   delay(1000); // Delay a second between loops.
+  digitalWrite(ledPin,LOW);
 }

@@ -1,0 +1,4 @@
+https://www.pcbway.com/blog/PCB_Design_Tutorial/How_to_make_your_own_ESP32_breakout_board_with_minimal_circuit.html
+https://www.espressif.com/sites/default/files/documentation/esp32-c3_technical_reference_manual_en.pdf#iomuxgpio-reg-summ
+https://core-electronics.com.au/attachments/localcontent/esp32-c3-wroom-02_datasheet_en_90609088aba.pdf
+https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/hw-reference/esp32c3/user-guide-devkitc-02.html
